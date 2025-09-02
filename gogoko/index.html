@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta  name="viewport"  content="width=device-width,  initial-scale=1,maximum-scale=1, minimum-scale=1,  user-scalable=no,  shrink-to-fit=no"/>
+	<meta charset="utf-8" />
+	<head>
+
+		<!-- start inject -->
+<!-- end inject -->
+
+		<link rel="stylesheet" href="https://sdk.cartoonnetworkarcade.com/data/sdk/play.sdk.css">
+		<script type="text/javascript" src="https://sdk.cartoonnetworkarcade.com/data/sdk/play.sdk.js"></script>
+		<script src="scripts/phaser.min.js"></script>
+		<!-- build:js -->
+		<script src="scripts/game.js"></script>
+		<!-- endbuild -->
+
+
+
+
+		<title>OK KO</title>
+	</head>	
+
+	</body>
+
+<script>
+
+	if(window['PlayPromise'] != undefined) {
+	 	window['PlayPromise'].then(sdk => new Funday.OKKO.Game(sdk));
+	} else {
+		var game = new Funday.OKKO.Game(undefined)
+	}
+
+</script>
+
+</html>
